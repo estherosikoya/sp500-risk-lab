@@ -1,0 +1,5 @@
+START_DATE = "2005-01-01"
+FIRST_TEST_DATE = "2012-01-01"   # first walk-forward test year
+HOLDOUT_START = "2024-01-01"     
+INDEX_TICKER = "^GSPC"
+EWMA_LAMBDA = 0.94
