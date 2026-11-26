@@ -22,3 +22,9 @@ A log of the choices I made in this project, what I rejected, and why.
 **Decision:** Use only tools that need no payment card: GitHub, GitHub Actions, GitHub Container Registry, Streamlit Community Cloud and Docker for personal use.
 **Why:** This is a learning and portfolio project, and I don't want to spend money on it.
 **Rejected:** Google Cloud, AWS and Azure. Their free tiers need a billing account with a payment method.
+
+## 5. Use log returns
+**Date:** 2026-11-26
+**Decision:** All analysis uses daily log returns, ln(price today / price yesterday), computed from adjusted close prices.
+**Why:** Log returns add up over time and are the standard input for volatility models such as GARCH. Adjusted prices already include splits and dividends, so the returns are correct.
+**Rejected:** Simple percentage returns for the time-series work. They don't add up across days. I may still use them later when comparing stocks.
